@@ -8,19 +8,19 @@ function showPart(part) {
   }
   if (part === "wheels") {
     name = "Wheels";
-    info = "The wheels support the car and allow it to move by rolling on the road.";
+    info = "Support the car’s full weight and convert engine power into rolling motion. Tires grip the road, absorbing shocks and helping with steering and stability. Front wheels usually handle steering, while rear wheels often handle driving p";
   }
   if (part === "brakes") {
     name = "Brakes";
-    info = "Brakes slow down or stop the car by using friction on the wheels.";
+    info = "Use friction to slow or stop the wheels, typically with pads pressing on metal discs. Hydraulic systems multiply the force from your foot for effective braking. ABS sensors detect wheel lock-up and modulate braking to prevent skidding. Brakes also help control speed on hills and in emergencies.";
   }
   if (part === "battery") {
     name = "Battery";
-    info = "The battery provides electrical power to start the engine and run electronics.";
+    info = "Stores electrical energy to start the engine via the starter motor. Powers all electronics when the engine isn’t running, like lights, radio, and ECU. Alternator recharges the battery while the engine runs. It also stabilizes voltage for sensitive electronics.";
   }
   if (part === "radiator") {
     name = "Radiator";
-    info = "The radiator keeps the engine cool by removing heat from the engine coolant.";
+    info = "Moves heat away from the engine by circulating coolant through thin tubes cooled by air. Fans help when the car is stationary. The thermostat regulates coolant flow to maintain optimal engine temperature. It prevents engine damage from overheating.";
   }
 
   document.getElementById("part-name").innerText = name;
