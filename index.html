@@ -7,28 +7,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Interactive Car</h1>
+  <header>
+    <h1>Interactive Car Showcase</h1>
+  </header>
 
-  <!-- Display selected part info -->
-  <h2 id="part-name">Select a part</h2>
-  <p id="part-info">Click a part of the car to see information.</p>
+  <main>
+    <section class="info-panel">
+      <h2 id="part-name">Select a part</h2>
+      <p id="part-info">Click a part of the car to see detailed info.</p>
+    </section>
 
-  <!-- Car image container -->
-  <div class="car-container">
-    <img src="https://tse3.mm.bing.net/th/id/OIP.QjF8INcp9zOC91ioU8qAUgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" 
-         alt="Car" class="car-image">
+    <section class="car-section">
+      <div class="car-container">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.QjF8INcp9zOC91ioU8qAUgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" 
+             alt="Car" class="car-image">
 
-    <!-- Overlay areas -->
-    <div class="part engine" style="top: 130px; left: 420px; width: 120px; height: 50px;" onclick="showPart('engine')"></div>
+        <!-- Overlay parts -->
+        <div class="part engine" style="top: 130px; left: 420px; width: 120px; height: 50px;" onclick="showPart('engine')"></div>
+        <div class="part wheel" style="top: 205px; left: 110px; width: 75px; height: 75px;" onclick="showPart('wheels')"></div>
+        <div class="part wheel" style="top: 205px; left: 450px; width: 75px; height: 75px;" onclick="showPart('wheels')"></div>
+        <div class="part brakes" style="top: 150px; left: 360px; width: 80px; height: 60px;" onclick="showPart('brakes')"></div>
+        <div class="part battery" style="top: 235px; left: 250px; width: 120px; height: 20px;" onclick="showPart('battery')"></div>
+        <div class="part radiator" style="top: 50px; left: 400px; width: 80px; height: 60px;" onclick="showPart('radiator')"></div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Wheels -->
-    <div class="part wheel" style="top: 205px; left: 110px; width: 75px; height: 75px;" onclick="showPart('wheels')"></div>
-    <div class="part wheel" style="top: 205px; left: 450px; width: 75px; height: 75px;" onclick="showPart('wheels')"></div>
-
-    <div class="part brakes" style="top: 150px; left: 360px; width: 80px; height: 60px;" onclick="showPart('brakes')"></div>
-    <div class="part battery" style="top: 235px; left: 250px; width: 120px; height: 20px;" onclick="showPart('battery')"></div>
-    <div class="part radiator" style="top: 50px; left: 400px; width: 80px; height: 60px;" onclick="showPart('radiator')"></div>
-  </div>
+  <footer>
+    <p>Made with ❤️ by Car Nerd Mode</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
