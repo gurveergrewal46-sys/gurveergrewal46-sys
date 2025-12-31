@@ -1,0 +1,69 @@
+body {
+  font-family: Arial;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.car-container {
+  position: relative;
+  width: 800px;
+  margin: auto;
+}
+
+.car {
+  width: 100%;
+}
+
+.part {
+  position: absolute;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.part:hover {
+  border: 2px solid yellow;
+}
+
+/* Clickable zones */
+.engine {
+  top: 200px;
+  left: 300px;
+  width: 200px;
+  height: 120px;
+}
+
+.wheel {
+  top: 350px;
+  left: 120px;
+  width: 120px;
+  height: 120px;
+}
+
+.brakes {
+  top: 350px;
+  left: 560px;
+  width: 120px;
+  height: 120px;
+}
+
+.battery {
+  top: 200px;
+  left: 520px;
+  width: 120px;
+  height: 100px;
+}
+
+.radiator {
+  top: 220px;
+  left: 300px;
+  width: 200px;
+  height: 80px;
+}
+
+#info-box {
+  margin-top: 20px;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
