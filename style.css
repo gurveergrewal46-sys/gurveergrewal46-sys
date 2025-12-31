@@ -36,7 +36,7 @@ p {
   transition: outline 0.3s, box-shadow 0.3s;
 }
 
-/* Add small visible circle to all parts */
+/* Add small visible white circle to all parts */
 .part::before {
   content: "";
   position: absolute;
@@ -45,12 +45,42 @@ p {
   transform: translate(-50%, -50%);
   width: 12px;
   height: 12px;
-  background-color: white;
+  background-color: white; /* always white */
   border-radius: 50%;
   pointer-events: none;
   z-index: 2;
-  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  box-shadow: 0 0 3px rgba(0,0,0,0.5); /* optional shadow for visibility */
 }
+
+/* Hover highlights remain the same */
+.part.engine:hover {
+  outline: 2px solid #ff6600;
+  box-shadow: 0 0 10px #ff6600;
+}
+
+.part.wheel {
+  border-radius: 50%;
+}
+.part.wheel:hover {
+  outline: 2px solid #007bff;
+  box-shadow: 0 0 10px #007bff;
+}
+
+.part.brakes:hover {
+  outline: 2px solid #ff0000;
+  box-shadow: 0 0 10px #ff0000;
+}
+
+.part.battery:hover {
+  outline: 2px solid #00cc00;
+  box-shadow: 0 0 10px #00cc00;
+}
+
+.part.radiator:hover {
+  outline: 2px solid #ffff00;
+  box-shadow: 0 0 10px #ffff00;
+}
+
 
 /* Engine highlight */
 .part.engine:hover {
