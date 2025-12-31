@@ -15,6 +15,7 @@ header h1 {
   text-shadow: 0 2px 10px rgba(0,0,0,0.7);
 }
 
+/* INFO PANEL */
 .info-panel {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -36,31 +37,35 @@ header h1 {
   color: #eee;
 }
 
-/* CAR IMAGE SECTION */
-.car-section {
-  margin: 30px auto;
-  display: flex;
-  justify-content: center;
+/* CAR SECTION */
+.car-section h2,
+.engine-section h2 {
+  font-size: 2rem;
+  color: #ffdd57;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
 }
 
-.car-container {
+.car-container,
+.engine-container {
   position: relative;
   display: inline-block;
-  transition: transform 0.3s ease;
 }
 
-.car-container:hover {
-  transform: scale(1.02);
-}
-
-.car-image {
+.car-image,
+.engine-image {
   width: 600px;
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(0,0,0,0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* OVERLAY PARTS */
+.car-container:hover,
+.engine-container:hover {
+  transform: scale(1.02);
+}
+
+/* PARTS (all overlays) */
 .part {
   position: absolute;
   cursor: pointer;
@@ -84,33 +89,14 @@ header h1 {
 }
 
 /* HOVER HIGHLIGHTS */
-.part.engine:hover {
-  outline: 3px solid #ff6600;
-  box-shadow: 0 0 15px #ff6600;
-}
-
-.part.wheel {
-  border-radius: 50%;
-}
-.part.wheel:hover {
-  outline: 3px solid #00bfff;
-  box-shadow: 0 0 15px #00bfff;
-}
-
-.part.brakes:hover {
-  outline: 3px solid #ff0000;
-  box-shadow: 0 0 15px #ff0000;
-}
-
-.part.battery:hover {
-  outline: 3px solid #00ff00;
-  box-shadow: 0 0 15px #00ff00;
-}
-
-.part.radiator:hover {
-  outline: 3px solid #ffff00;
-  box-shadow: 0 0 15px #ffff00;
-}
+.part.engine:hover { outline: 3px solid #ff6600; box-shadow: 0 0 15px #ff6600; }
+.part.wheel:hover  { outline: 3px solid #00bfff; box-shadow: 0 0 15px #00bfff; }
+.part.brakes:hover { outline: 3px solid #ff0000; box-shadow: 0 0 15px #ff0000; }
+.part.battery:hover{ outline: 3px solid #00ff00; box-shadow: 0 0 15px #00ff00; }
+.part.radiator:hover{ outline: 3px solid #ffff00; box-shadow: 0 0 15px #ffff00; }
+.part.intake:hover { outline: 3px solid #ff66ff; box-shadow: 0 0 15px #ff66ff; }
+.part.alternator:hover { outline: 3px solid #66ffcc; box-shadow: 0 0 15px #66ffcc; }
+.part.turbo:hover { outline: 3px solid #ff9966; box-shadow: 0 0 15px #ff9966; }
 
 /* FOOTER */
 footer {
