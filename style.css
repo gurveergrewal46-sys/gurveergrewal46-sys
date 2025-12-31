@@ -37,7 +37,7 @@ header h1 {
   color: #eee;
 }
 
-/* CAR SECTION */
+/* CAR & ENGINE SECTIONS */
 .car-section h2,
 .engine-section h2 {
   font-size: 2rem;
@@ -83,16 +83,16 @@ header h1 {
   width: 14px;
   height: 14px;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 50%; /* make it circular */
   pointer-events: none;
   box-shadow: 0 0 5px rgba(0,0,0,0.7);
 }
 
 /* HOVER HIGHLIGHTS */
-.part.engine:hover { outline: 3px solid #ff6600; box-shadow: 0 0 15px #ff6600; }
-.part.wheel:hover  { outline: 3px solid #00bfff; box-shadow: 0 0 15px #00bfff; }
+.part.wheel:hover  { outline: 3px solid #00bfff; box-shadow: 0 0 15px #00bfff; border-radius: 50%; }
 .part.brakes:hover { outline: 3px solid #ff0000; box-shadow: 0 0 15px #ff0000; }
 .part.battery:hover{ outline: 3px solid #00ff00; box-shadow: 0 0 15px #00ff00; }
+.part.engine:hover { outline: 3px solid #ff6600; box-shadow: 0 0 15px #ff6600; }
 .part.radiator:hover{ outline: 3px solid #ffff00; box-shadow: 0 0 15px #ffff00; }
 .part.intake:hover { outline: 3px solid #ff66ff; box-shadow: 0 0 15px #ff66ff; }
 .part.alternator:hover { outline: 3px solid #66ffcc; box-shadow: 0 0 15px #66ffcc; }
