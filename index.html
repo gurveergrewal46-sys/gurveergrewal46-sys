@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Range Rover Interactive</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Car Parts</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>Interactive Range Rover</h1>
 
-<header>
-  <h1>Range Rover Interactive Learning Tool</h1>
-  <p>Click on any part of the car to learn what it does</p>
-</header>
+  <!-- Display selected part info -->
+  <h2 id="part-name">Select a part</h2>
+  <p id="part-info">Click a part of the car to see information.</p>
 
-<div class="main">
+  <!-- Car image container -->
   <div class="car-container">
-    <img src="https://tse3.mm.bing.net/th/id/OIP.QjF8INcp9zOC91ioU8qAUgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" class="car">
+    <img src="car.png" alt="Car" class="car-image">
 
-    <div class="hotspot engine" onclick="showPart('engine')"></div>
-    <div class="hotspot wheels" onclick="showPart('wheels')"></div>
-    <div class="hotspot brakes" onclick="showPart('brakes')"></div>
-    <div class="hotspot battery" onclick="showPart('battery')"></div>
-    <div class="hotspot radiator" onclick="showPart('radiator')"></div>
+    <!-- Overlay areas -->
+    <div class="part" style="top: 50px; left: 200px; width: 150px; height: 100px;" onclick="showPart('engine')"></div>
+    <div class="part" style="top: 250px; left: 50px; width: 120px; height: 100px;" onclick="showPart('wheels')"></div>
+    <div class="part" style="top: 250px; left: 350px; width: 120px; height: 100px;" onclick="showPart('wheels')"></div>
+    <div class="part" style="top: 100px; left: 350px; width: 80px; height: 60px;" onclick="showPart('brakes')"></div>
+    <div class="part" style="top: 50px; left: 50px; width: 80px; height: 60px;" onclick="showPart('battery')"></div>
+    <div class="part" style="top: 50px; left: 400px; width: 80px; height: 60px;" onclick="showPart('radiator')"></div>
   </div>
 
-  <div class="info">
-    <h2 id="partName">Select a part</h2>
-    <p id="partInfo">Click on a part of the Range Rover to see how it works.</p>
-  </div>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
