@@ -22,6 +22,18 @@ function showPart(part) {
     name = "Radiator";
     info = "Moves engine heat to coolant, then air. Fans assist when stopped. Thermostat regulates flow. Prevents overheating.";
   }
+  if (part === "intake") {
+    name = "Intake Manifold";
+    info = "Delivers air to cylinders for combustion. Optimizes airflow for power and efficiency.";
+  }
+  if (part === "alternator") {
+    name = "Alternator";
+    info = "Converts mechanical energy from the engine into electricity. Recharges the battery and powers electronics while driving.";
+  }
+  if (part === "turbo") {
+    name = "Turbocharger";
+    info = "Uses exhaust gases to spin a turbine, forcing more air into the engine. Increases power without increasing engine size.";
+  }
 
   document.getElementById("part-name").innerText = name;
   document.getElementById("part-info").innerText = info;
