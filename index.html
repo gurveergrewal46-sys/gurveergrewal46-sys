@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Car Parts</title>
+  <title>Interactive Car & Engine</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Interactive Car Showcase</h1>
+    <h1>Interactive Car & Engine Showcase</h1>
   </header>
 
   <main>
-    <section class="info-panel">
-      <h2 id="part-name">Select a part</h2>
-      <p id="part-info">Click a part of the car to see detailed info.</p>
-    </section>
-
+    <!-- CAR SECTION -->
     <section class="car-section">
+      <h2>Your Car</h2>
       <div class="car-container">
         <img src="https://tse3.mm.bing.net/th/id/OIP.QjF8INcp9zOC91ioU8qAUgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" 
              alt="Car" class="car-image">
@@ -31,10 +28,34 @@
         <div class="part radiator" style="top: 50px; left: 400px; width: 80px; height: 60px;" onclick="showPart('radiator')"></div>
       </div>
     </section>
+
+    <!-- ENGINE SECTION -->
+    <section class="engine-section">
+      <h2>Engine Parts</h2>
+      <div class="engine-container">
+        <img src="https://images.caricos.com/l/land_rover/2016_range_rover_sport_td6/images/2560x1440/2016_range_rover_sport_td6_44_2560x1440.jpg" 
+             alt="Range Rover Engine" class="engine-image">
+
+        <!-- Overlay interactive engine parts -->
+        <div class="part engine" style="top: 140px; left: 250px; width: 200px; height: 100px;" onclick="showPart('engine')"></div>
+        <div class="part radiator" style="top: 80px; left: 150px; width: 90px; height: 60px;" onclick="showPart('radiator')"></div>
+        <div class="part battery" style="top: 50px; left: 400px; width: 80px; height: 50px;" onclick="showPart('battery')"></div>
+        <div class="part brakes" style="top: 200px; left: 300px; width: 70px; height: 50px;" onclick="showPart('brakes')"></div>
+        <div class="part intake" style="top: 120px; left: 380px; width: 60px; height: 40px;" onclick="showPart('intake')"></div>
+        <div class="part alternator" style="top: 180px; left: 450px; width: 60px; height: 40px;" onclick="showPart('alternator')"></div>
+        <div class="part turbo" style="top: 220px; left: 200px; width: 60px; height: 40px;" onclick="showPart('turbo')"></div>
+      </div>
+    </section>
+
+    <!-- INFO PANEL -->
+    <section class="info-panel">
+      <h2 id="part-name">Select a part</h2>
+      <p id="part-info">Click a part of the car or engine to see detailed info.</p>
+    </section>
   </main>
 
   <footer>
-    <p>Made by Gurveer Grewal</p>
+    <p>Made with ❤️ by Car Nerd Mode</p>
   </footer>
 
   <script src="script.js"></script>
