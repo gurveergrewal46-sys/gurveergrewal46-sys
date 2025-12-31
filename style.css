@@ -66,7 +66,7 @@ p {
   border-radius: 50%;
 }
 .part.wheel:hover {
-  outline: 2px solid #007bff;
+  outline: 2px solid #FFFFFF;
   box-shadow: 0 0 10px #007bff;
 }
 .part.wheel::before {
