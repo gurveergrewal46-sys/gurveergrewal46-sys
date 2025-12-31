@@ -36,10 +36,29 @@ p {
   transition: outline 0.3s, box-shadow 0.3s;
 }
 
+/* Add small visible circle to all parts */
+.part::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 2;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
 /* Engine highlight */
 .part.engine:hover {
   outline: 2px solid #ff6600;
   box-shadow: 0 0 10px #ff6600;
+}
+.part.engine::before {
+  background-color: #ff6600;
 }
 
 /* Wheel highlight */
@@ -50,11 +69,17 @@ p {
   outline: 2px solid #007bff;
   box-shadow: 0 0 10px #007bff;
 }
+.part.wheel::before {
+  background-color: #007bff;
+}
 
 /* Brakes highlight */
 .part.brakes:hover {
   outline: 2px solid #ff0000;
   box-shadow: 0 0 10px #ff0000;
+}
+.part.brakes::before {
+  background-color: #ff0000;
 }
 
 /* Battery highlight */
@@ -62,9 +87,15 @@ p {
   outline: 2px solid #00cc00;
   box-shadow: 0 0 10px #00cc00;
 }
+.part.battery::before {
+  background-color: #00cc00;
+}
 
 /* Radiator highlight */
 .part.radiator:hover {
   outline: 2px solid #ffff00;
   box-shadow: 0 0 10px #ffff00;
+}
+.part.radiator::before {
+  background-color: #ffff00;
 }
