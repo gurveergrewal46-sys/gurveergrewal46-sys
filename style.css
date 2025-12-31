@@ -26,15 +26,45 @@ p {
 }
 
 .car-image {
-  width: 600px; /* adjust based on your image size */
+  width: 600px; /* adjust if needed */
 }
 
-/* Transparent overlay areas */
+/* Base styles for all parts */
 .part {
   position: absolute;
   cursor: pointer;
-  /* For debugging, you can temporarily add a background: rgba(255,0,0,0.3); */
+  transition: outline 0.3s, box-shadow 0.3s;
 }
-.part:hover {
-  outline: 2px solid #007bff; /* highlight on hover */
+
+/* Engine highlight */
+.part.engine:hover {
+  outline: 2px solid #ff6600;
+  box-shadow: 0 0 10px #ff6600;
+}
+
+/* Wheel highlight */
+.part.wheel {
+  border-radius: 50%;
+}
+.part.wheel:hover {
+  outline: 2px solid #007bff;
+  box-shadow: 0 0 10px #007bff;
+}
+
+/* Brakes highlight */
+.part.brakes:hover {
+  outline: 2px solid #ff0000;
+  box-shadow: 0 0 10px #ff0000;
+}
+
+/* Battery highlight */
+.part.battery:hover {
+  outline: 2px solid #00cc00;
+  box-shadow: 0 0 10px #00cc00;
+}
+
+/* Radiator highlight */
+.part.radiator:hover {
+  outline: 2px solid #ffff00;
+  box-shadow: 0 0 10px #ffff00;
 }
