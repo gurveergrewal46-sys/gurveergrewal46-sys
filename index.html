@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Range Rover Interactive Car</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Range Rover Interactive Diagram</h1>
+<p>Click on a car part to learn what it does.</p>
+
+<div class="car-container">
+  <img src="https://i.imgur.com/0KFBHTB.png" class="car">
+
+  <div class="part engine" onclick="showPart('engine')"></div>
+  <div class="part wheel" onclick="showPart('wheels')"></div>
+  <div class="part brakes" onclick="showPart('brakes')"></div>
+  <div class="part battery" onclick="showPart('battery')"></div>
+  <div class="part radiator" onclick="showPart('radiator')"></div>
+</div>
+
+<div id="info-box">
+  <h2 id="part-name">Click a part</h2>
+  <p id="part-info">Information will appear here.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
