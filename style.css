@@ -1,58 +1,27 @@
-body {
-  margin: 0;
-  font-family: Arial;
-  background: linear-gradient(#0b0b0b, #222);
-  color: white;
-}
+const parts = {
+  engine: {
+    name: "Engine",
+    info: "The engine burns fuel and air to create power that moves the Range Rover."
+  },
+  wheels: {
+    name: "Wheels",
+    info: "The wheels support the vehicle and allow it to move and turn on the road."
+  },
+  brakes: {
+    name: "Brakes",
+    info: "The brakes use friction to slow down and stop the vehicle safely."
+  },
+  battery: {
+    name: "Battery",
+    info: "The battery provides electrical power to start the engine and run electronics."
+  },
+  radiator: {
+    name: "Radiator",
+    info: "The radiator removes heat from the engine to prevent it from overheating."
+  }
+};
 
-header {
-  text-align: center;
-  padding: 20px;
-  background: #111;
-  border-bottom: 2px solid #333;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px;
-}
-
-.car-container {
-  position: relative;
-  width: 800px; /* matches image width for alignment */
-}
-
-.car {
-  width: 100%;
-  border-radius: 15px;
-}
-
-.hotspot {
-  position: absolute;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.hotspot:hover {
-  background: rgba(255, 255, 0, 0.3);
-  box-shadow: 0 0 15px yellow;
-}
-
-/* Hotspot positions for the chosen image */
-.engine { top: 220px; left: 300px; width: 200px; height: 120px; }
-.wheels { top: 450px; left: 140px; width: 130px; height: 130px; }
-.brakes { top: 450px; left: 520px; width: 130px; height: 130px; }
-.battery { top: 220px; left: 520px; width: 130px; height: 90px; }
-.radiator { top: 250px; left: 320px; width: 160px; height: 80px; }
-
-.info {
-  width: 320px;
-  margin-left: 30px;
-  background: #111;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px black;
+function showPart(part) {
+  document.getElementById("partName").innerText = parts[part].name;
+  document.getElementById("partInfo").innerText = parts[part].info;
 }
