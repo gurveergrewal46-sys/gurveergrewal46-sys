@@ -63,7 +63,7 @@ p {
 
 /* Wheel highlight */
 .part.wheel {
-  border-radius: 50%;
+  border-radius: 75%;
 }
 .part.wheel:hover {
   outline: 2px solid #FFFFFF;
