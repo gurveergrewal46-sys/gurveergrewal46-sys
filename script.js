@@ -4,7 +4,7 @@ function showPart(part) {
 
   if (part === "engine") {
     name = "Engine";
-    info = "The engine is the heart of the car. It burns fuel and air to create power that moves the vehicle.";
+    info = "Burns a mix of fuel and air in cylinders to create explosions that push pistons, generating power. That power turns the crankshaft and eventually moves the wheels. It produces a lot of heat, so it relies on coolant, oil, and the radiator to stay at the right temperature. Modern engines also have sensors and electronics to optimize fuel efficiency and reduce emissions.";
   }
   if (part === "wheels") {
     name = "Wheels";
