@@ -1,27 +1,40 @@
-const parts = {
-  engine: {
-    name: "Engine",
-    info: "The engine burns fuel and air to create power that moves the Range Rover."
-  },
-  wheels: {
-    name: "Wheels",
-    info: "The wheels support the vehicle and allow it to move and turn on the road."
-  },
-  brakes: {
-    name: "Brakes",
-    info: "The brakes use friction to slow down and stop the vehicle safely."
-  },
-  battery: {
-    name: "Battery",
-    info: "The battery provides electrical power to start the engine and run electronics."
-  },
-  radiator: {
-    name: "Radiator",
-    info: "The radiator removes heat from the engine to prevent it from overheating."
-  }
-};
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
 
-function showPart(part) {
-  document.getElementById("partName").innerText = parts[part].name;
-  document.getElementById("partInfo").innerText = parts[part].info;
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+  margin-top: 20px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+}
+
+.car-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.car-image {
+  width: 600px; /* adjust based on your image size */
+}
+
+/* Transparent overlay areas */
+.part {
+  position: absolute;
+  cursor: pointer;
+  /* For debugging, you can temporarily add a background: rgba(255,0,0,0.3); */
+}
+.part:hover {
+  outline: 2px solid #007bff; /* highlight on hover */
 }
