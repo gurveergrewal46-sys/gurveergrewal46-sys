@@ -19,14 +19,18 @@
         <img src="https://tse3.mm.bing.net/th/id/OIP.QjF8INcp9zOC91ioU8qAUgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" 
              alt="Car" class="car-image">
 
-        <!-- Overlay parts -->
-        <div class="part engine" style="top: 130px; left: 420px; width: 120px; height: 50px;" onclick="showPart('engine')"></div>
+        <!-- Overlay parts (simplified) -->
         <div class="part wheel" style="top: 205px; left: 110px; width: 75px; height: 75px;" onclick="showPart('wheels')"></div>
         <div class="part wheel" style="top: 205px; left: 450px; width: 75px; height: 75px;" onclick="showPart('wheels')"></div>
         <div class="part brakes" style="top: 150px; left: 360px; width: 80px; height: 60px;" onclick="showPart('brakes')"></div>
         <div class="part battery" style="top: 235px; left: 250px; width: 120px; height: 20px;" onclick="showPart('battery')"></div>
-        <div class="part radiator" style="top: 50px; left: 400px; width: 80px; height: 60px;" onclick="showPart('radiator')"></div>
       </div>
+    </section>
+
+    <!-- INFO PANEL BETWEEN SECTIONS -->
+    <section class="info-panel">
+      <h2 id="part-name">Select a part</h2>
+      <p id="part-info">Click a part of the car or engine to see detailed info.</p>
     </section>
 
     <!-- ENGINE SECTION -->
@@ -45,12 +49,6 @@
         <div class="part alternator" style="top: 180px; left: 450px; width: 60px; height: 40px;" onclick="showPart('alternator')"></div>
         <div class="part turbo" style="top: 220px; left: 200px; width: 60px; height: 40px;" onclick="showPart('turbo')"></div>
       </div>
-    </section>
-
-    <!-- INFO PANEL -->
-    <section class="info-panel">
-      <h2 id="part-name">Select a part</h2>
-      <p id="part-info">Click a part of the car or engine to see detailed info.</p>
     </section>
   </main>
 
