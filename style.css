@@ -54,7 +54,7 @@ p {
 
 /* Hover highlights remain the same */
 .part.engine:hover {
-  outline: 2px solid #ff6600;
+  outline: 2px solid #FFFFFF;
   box-shadow: 0 0 10px #ff6600;
 }
 
@@ -62,22 +62,22 @@ p {
   border-radius: 50%;
 }
 .part.wheel:hover {
-  outline: 2px solid #007bff;
+  outline: 2px solid #FFFFFF;
   box-shadow: 0 0 10px #007bff;
 }
 
 .part.brakes:hover {
-  outline: 2px solid #ff0000;
+  outline: 2px solid #FFFFFF;
   box-shadow: 0 0 10px #ff0000;
 }
 
 .part.battery:hover {
-  outline: 2px solid #00cc00;
+  outline: 2px solid #FFFFFF;
   box-shadow: 0 0 10px #00cc00;
 }
 
 .part.radiator:hover {
-  outline: 2px solid #ffff00;
+  outline: 2px solid #FFFFFF;
   box-shadow: 0 0 10px #ffff00;
 }
 
